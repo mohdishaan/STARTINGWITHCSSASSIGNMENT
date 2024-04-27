@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting with CSS Assignment</title>
+    <style>
+        .para__intro{
+            color: green;
+        }
+        .para__content{
+            color: violet;
+        }
+        .essay__head{
+            color: blue;
+        }
+        .essay__brief{
+            font-size: 30px;
+            color: pink;
+        }
+        .essay__end{
+            color: skyblue;
+        }
+        .essay__button--italic{
+            background-color: bisque;
+            font-style: italic;
+        }
+        .essay__button--oblique{
+            background-color: beige;
+            font-style: oblique;
+        }
+
+    </style>
+</head>
+<body>
+    <!--I have taken a block named 'para' which contains the element named 'intro' and 'content'. As per BEM convention the blockname and element name are separated by using "__" double underscore-->
+    <div class="para">
+        <p class="para__intro">This is my Paragraph</p>
+        <p class="para__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, iusto? </p>
+    </div>
+    <!--In this i have taken a block named 'essay' which contains the elements 'head','brief' and 'end'. 'Essay' block also contains the element 'button' which further contains the modifier named 'italic' and 'oblique'. As per BEM convention block name and element name are separated by '__' double underscore and modifier are further separated by '--' hyphen-->
+    <div class="essay">
+        <p class="essay__head">This is the essay heading</p>
+        <p class="essay__brief">This is all brief we can go</p>
+        <p class="essay__end">This is the ending of the essay</p>
+        <button class="essay__button--italic">SUBMIT</button>
+        <button class="essay__button--oblique">RESET</button>
+    </div>
+</body>
+</html>

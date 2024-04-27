@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting with CSS Assignment</title>
+    <!--Internal styling-->
+    <style>
+        .int{
+            color: aqua;
+            font-size: 40px;
+        }
+        .inl_int{
+            background-color: brown;
+        }
+        .int_ext{
+            color: blue;
+        }
+        .inl_int_ext{
+            color:aqua;
+        }
+
+    </style>
+    <!--External styling-->
+    <link rel="stylesheet" href="SOL.1(css) STARTING WITH CSS ASSGN.css">
+</head>
+<body>
+    <!--Inline style applied-->
+    <div style="font-size: 20px; color: antiquewhite;">Hello world</div>
+    <br>
+    <!--Internal styles applied-->
+    <div class="int">What'sup</div><br>
+    <!--External styles applied-->
+    <div class="ext">Its CSS Going</div><br>
+    <!--when inline and internal are applied together-->
+    <div style="background-color: blanchedalmond;" class="inl_int">WOW</div><br>
+    <!--when internal and external are applied together-->
+    <div class="int_ext">Enjoying??</div><br>
+    <!--when inline, internal and external are applied all together-->
+    <div style="color:antiquewhite;" class="inl_int_ext">very much</div><br>
+</body>
+</html>
